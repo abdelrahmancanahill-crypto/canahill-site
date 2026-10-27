@@ -82,10 +82,15 @@ section{padding:104px 0}
 .partner .logos img{height:64px;width:auto}
 .partner .logos i{width:1px;height:56px;background:var(--line)}
 .partner p{color:var(--muted);font-size:15px}
-.clients{margin-top:28px}
-.clients h3{font-size:14px;color:var(--muted);font-weight:500;margin-bottom:14px}
-.chips{display:flex;flex-wrap:wrap;gap:10px}
-.chip{background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 18px;font-weight:600;font-size:15px;color:var(--g900)}
+.clients{margin-top:64px;padding-top:40px;border-top:1px solid var(--line)}
+.clients-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+.clients-head h3{font-size:20px;color:var(--g900);font-weight:700}
+.clients-head p{font-size:14px;color:var(--muted)}
+.client-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.client{background:#fff;border:1px solid var(--line);border-radius:18px;height:150px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:18px;transition:transform .25s,box-shadow .25s}
+.client:hover{transform:translateY(-3px);box-shadow:0 14px 30px -20px rgba(9,58,30,.4)}
+.client img{max-height:80px;max-width:80%;width:auto;object-fit:contain}
+.client span{font-size:13px;color:var(--muted);font-weight:500}
 
 /* products */
 #products{background:#fff}
@@ -106,10 +111,10 @@ section{padding:104px 0}
 .brands-box{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden}
 .brands{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));margin-inline-end:-1px;margin-bottom:-1px}
 .brand{display:grid;place-items:center;height:120px;padding:22px 18px;font-weight:700;font-size:17px;letter-spacing:.08em;color:var(--g900);background:#fff;border-inline-end:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center;direction:ltr;transition:background .2s}
-.brand img{max-height:56px;max-width:100%;width:auto;object-fit:contain;filter:grayscale(1);opacity:.75;transition:filter .25s,opacity .25s}
+.brand img{max-height:56px;max-width:100%;width:auto;object-fit:contain;transition:transform .25s}
 .brand img+span{display:none}
 .brand:hover{background:#fafaf7}
-.brand:hover img{filter:none;opacity:1}
+.brand:hover img{transform:scale(1.06)}
 
 /* contact */
 #contact{background:var(--g900);color:#fff}
@@ -144,6 +149,8 @@ footer .flogos i{width:1px;height:32px;background:rgba(255,255,255,.2)}
   .stats .wrap{grid-template-columns:repeat(2,1fr);row-gap:22px}
   .stat:nth-child(3){border:0;padding-inline-start:0}
   .about-grid,.cards,.contact-grid{grid-template-columns:1fr}
+  .client-row{grid-template-columns:repeat(2,1fr)}
+  .client{height:130px}
   .brands{grid-template-columns:repeat(2,1fr)}
   section{padding:72px 0}
 }
@@ -215,16 +222,6 @@ footer .flogos i{width:1px;height:32px;background:rgba(255,255,255,.2)}
         <p class="ar">نعمل بشراكة فرنسية مع <b>ICS</b>، ونمثّل نخبة من أقوى العلامات الأوروبية في البذّارات والمعدات، لنقدّم لعملائنا جودة موثوقة ودعمًا فنيًا مستمرًا.</p>
         <p class="en">By the grace of God, Canahill Agricultural Establishment has served the Saudi market for more than 30 years, specializing in seeds, agricultural equipment, and spare parts.</p>
         <p class="en">Through our French partnership with <b>ICS</b>, we represent leading European planter and equipment brands — delivering trusted quality and ongoing technical support.</p>
-        <div class="clients">
-          <h3><span class="ar">من عملائنا</span><span class="en">Some of our clients</span></h3>
-          <div class="chips">
-            <span class="chip"><span class="ar">المراعي</span><span class="en">Almarai</span></span>
-            <span class="chip"><span class="ar">نادك</span><span class="en">NADEC</span></span>
-            <span class="chip"><span class="ar">الجوف للتنمية الزراعية</span><span class="en">Al Jouf Agricultural Dev.</span></span>
-            <span class="chip"><span class="ar">الإنماء</span><span class="en">Alinma</span></span>
-            <span class="chip"><span class="ar">وغيرها من الشركات الكبرى</span><span class="en">and many more</span></span>
-          </div>
-        </div>
       </div>
       <aside class="partner reveal">
         <div class="logos">
@@ -234,6 +231,18 @@ footer .flogos i{width:1px;height:32px;background:rgba(255,255,255,.2)}
         </div>
         <p><span class="ar">شراكة استراتيجية تجمع خبرة الكناهل المحلية مع الخبرة الفرنسية لـ ICS في البذور والمعدات الزراعية.</span><span class="en">A strategic partnership combining Canahill's local expertise with ICS's French know-how in seeds and agricultural equipment.</span></p>
       </aside>
+    </div>
+    <div class="clients reveal">
+      <div class="clients-head">
+        <h3><span class="ar">شركاء النجاح</span><span class="en">Trusted by</span></h3>
+        <p><span class="ar">من عملائنا — وغيرهم من كبرى الشركات الزراعية في المملكة</span><span class="en">Some of our clients — among many of the Kingdom's leading agricultural companies</span></p>
+      </div>
+      <div class="client-row">
+        <div class="client"><img src="client-almarai.png" alt="Almarai" loading="lazy"><span><span class="ar">المراعي</span><span class="en">Almarai</span></span></div>
+        <div class="client"><img src="client-nadec.png" alt="NADEC" loading="lazy"><span><span class="ar">نادك</span><span class="en">NADEC</span></span></div>
+        <div class="client"><img src="client-aljouf.png" alt="Al Jouf" loading="lazy"><span><span class="ar">الجوف للتنمية الزراعية</span><span class="en">Al Jouf Agricultural Dev.</span></span></div>
+        <div class="client"><img src="client-inma.png" alt="Inma Agricultural" loading="lazy"><span><span class="ar">إنماء الزراعية</span><span class="en">Inma Agricultural</span></span></div>
+      </div>
     </div>
   </div>
 </section>
