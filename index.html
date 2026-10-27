@@ -103,10 +103,13 @@ section{padding:104px 0}
 .card .more{margin-top:auto;font-weight:600;color:var(--green);font-size:15px}
 
 /* brands */
-.brands{display:grid;grid-template-columns:repeat(7,1fr);border:1px solid var(--line);border-radius:22px;overflow:hidden;background:#fff}
-.brand{display:grid;place-items:center;padding:34px 10px;font-weight:700;font-size:17px;letter-spacing:.08em;color:var(--g900);border-inline-start:1px solid var(--line);direction:ltr;transition:background .2s,color .2s}
-.brand:first-child{border:0}
-.brand:hover{background:var(--g900);color:#fff}
+.brands-box{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden}
+.brands{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));margin-inline-end:-1px;margin-bottom:-1px}
+.brand{display:grid;place-items:center;height:120px;padding:22px 18px;font-weight:700;font-size:17px;letter-spacing:.08em;color:var(--g900);background:#fff;border-inline-end:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center;direction:ltr;transition:background .2s}
+.brand img{max-height:56px;max-width:100%;width:auto;object-fit:contain;filter:grayscale(1);opacity:.75;transition:filter .25s,opacity .25s}
+.brand img+span{display:none}
+.brand:hover{background:#fafaf7}
+.brand:hover img{filter:none;opacity:1}
 
 /* contact */
 #contact{background:var(--g900);color:#fff}
@@ -142,10 +145,6 @@ footer .flogos i{width:1px;height:32px;background:rgba(255,255,255,.2)}
   .stat:nth-child(3){border:0;padding-inline-start:0}
   .about-grid,.cards,.contact-grid{grid-template-columns:1fr}
   .brands{grid-template-columns:repeat(2,1fr)}
-  .brand{border-inline-start:0;border-top:1px solid var(--line)}
-  .brand:nth-child(even){border-inline-start:1px solid var(--line)}
-  .brand:nth-child(-n+2){border-top:0}
-  .brand:last-child{grid-column:1/-1;border-inline-start:0}
   section{padding:72px 0}
 }
 @media (max-width:520px){
@@ -195,7 +194,7 @@ footer .flogos i{width:1px;height:32px;background:rgba(255,255,255,.2)}
   <div class="stats">
     <div class="wrap">
       <div class="stat"><b class="ltr">30+</b><span class="ar">عامًا من الخبرة</span><span class="en">Years of experience</span></div>
-      <div class="stat"><b>7</b><span class="ar">علامات تجارية عالمية</span><span class="en">Global brands</span></div>
+      <div class="stat"><b>+10</b><span class="ar">علامات تجارية عالمية</span><span class="en">Global brands</span></div>
       <div class="stat"><b>3</b><span class="ar">أقسام متخصصة</span><span class="en">Specialized divisions</span></div>
       <div class="stat"><b>🇫🇷 ICS</b><span class="ar">شريك فرنسي</span><span class="en">French partner</span></div>
     </div>
@@ -293,15 +292,19 @@ footer .flogos i{width:1px;height:32px;background:rgba(255,255,255,.2)}
         <h2><span class="ar">نمثّل أقوى الأسماء في المعدات الزراعية</span><span class="en">We represent the strongest names in farm equipment</span></h2>
       </div>
     </div>
-    <div class="brands reveal">
-      <div class="brand">MONOSEM</div>
-      <div class="brand">VÄDERSTAD</div>
-      <div class="brand">KIRBY</div>
-      <div class="brand">CARUELLE</div>
-      <div class="brand">PELLENC</div>
-      <div class="brand">KRONE</div>
-      <div class="brand">CAFFINI</div>
-    </div>
+    <div class="brands-box reveal"><div class="brands">
+      <div class="brand"><img src="brand-monosem.png" alt="MONOSEM" loading="lazy" onerror="this.remove()"><span>MONOSEM</span></div>
+      <div class="brand"><img src="brand-vaderstad.png" alt="VÄDERSTAD" loading="lazy" onerror="this.remove()"><span>VÄDERSTAD</span></div>
+      <div class="brand"><img src="brand-kirby.png" alt="KIRBY" loading="lazy" onerror="this.remove()"><span>KIRBY</span></div>
+      <div class="brand"><img src="brand-caruelle.png" alt="CARUELLE" loading="lazy" onerror="this.remove()"><span>CARUELLE</span></div>
+      <div class="brand"><img src="brand-pellenc.svg" alt="PELLENC" loading="lazy" onerror="this.remove()"><span>PELLENC</span></div>
+      <div class="brand"><img src="brand-krone.png" alt="KRONE" loading="lazy" onerror="this.remove()"><span>KRONE</span></div>
+      <div class="brand"><img src="brand-caffini.png" alt="CAFFINI" loading="lazy" onerror="this.remove()"><span>CAFFINI</span></div>
+      <div class="brand"><img src="brand-gregoire-besson.svg" alt="GRÉGOIRE BESSON" loading="lazy" onerror="this.remove()"><span>GRÉGOIRE BESSON</span></div>
+      <div class="brand"><img src="brand-simon.png" alt="SIMON" loading="lazy" onerror="this.remove()"><span>SIMON</span></div>
+      <div class="brand"><img src="brand-alko.png" alt="AL-KO" loading="lazy" onerror="this.remove()"><span>AL-KO</span></div>
+      <div class="brand"><img src="brand-lockwood.png" alt="LOCKWOOD" loading="lazy" onerror="this.remove()"><span>LOCKWOOD</span></div>
+    </div></div>
   </div>
 </section>
 
