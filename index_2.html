@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مؤسسة الكناهل الزراعية | Canahill Agricultural Est.</title>
+<meta name="description" content="مؤسسة الكناهل الزراعية — أكثر من 30 عامًا في توريد البذور والمعدات الزراعية وقطع الغيار في المملكة العربية السعودية، بالشراكة مع ICS الفرنسية.">
+<meta property="og:title" content="مؤسسة الكناهل الزراعية | Canahill Agricultural Est.">
+<meta property="og:description" content="بذور، معدات زراعية، وقطع غيار أصلية — أكثر من 30 عامًا في السوق السعودي.">
+<meta property="og:image" content="icon-512.png">
+<meta name="theme-color" content="#093A1E">
+<link rel="icon" href="icon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --g900:#093A1E; --green:#1C8A4C; --red:#D34A45; --ink:#231f20;
+  --paper:#F6F4EF; --white:#fff; --muted:#5b625d; --line:#dcd8cf;
+  --max:1180px; --gut:clamp(16px,4vw,44px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"IBM Plex Sans Arabic",system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+[lang=ar] .en, [lang=en] .ar{display:none!important}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(246,244,239,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:76px;gap:24px}
+.nav .logo img{height:52px;width:auto}
+.nav ul{display:flex;gap:28px;list-style:none;font-size:15px;font-weight:500}
+.nav ul a{color:var(--muted);transition:color .2s}
+.nav ul a:hover{color:var(--g900)}
+.nav-end{display:flex;align-items:center;gap:12px}
+.lang{border:1px solid var(--line);background:none;border-radius:999px;padding:6px 14px;font:600 13px/1 inherit;font-family:inherit;color:var(--g900);cursor:pointer}
+.lang:hover{border-color:var(--g900)}
+.btn{display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:12px 24px;font-weight:600;font-size:15px;transition:transform .15s,background .2s}
+.btn:active{transform:scale(.97)}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:#bd3d38}
+.btn-ghost{border:1px solid rgba(255,255,255,.4);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.nav .btn{padding:10px 18px;font-size:14px}
+
+/* hero */
+.hero{background:var(--g900);color:#fff;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:
+  linear-gradient(115deg,transparent 48%,rgba(28,138,76,.35) 48.2%,transparent 48.6%),
+  linear-gradient(25deg,transparent 60%,rgba(28,138,76,.3) 60.2%,transparent 60.5%),
+  linear-gradient(160deg,transparent 70%,rgba(28,138,76,.25) 70.2%,transparent 70.5%);}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center;padding-top:96px;padding-bottom:96px}
+.eyebrow{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#8fd3a8;font-weight:600}
+[lang=ar] .eyebrow{letter-spacing:0;font-size:15px}
+.hero h1{font-size:clamp(34px,5.4vw,64px);line-height:1.15;font-weight:700;margin:18px 0 22px;text-wrap:balance}
+.hero h1 em{font-style:normal;color:#e9827d}
+.hero p.lead{font-size:clamp(16px,1.6vw,19px);color:rgba(255,255,255,.78);max-width:560px}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+.hero-mark{justify-self:center;width:min(320px,70%)}
+.stats{position:relative;border-top:1px solid rgba(255,255,255,.12)}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);padding-top:28px;padding-bottom:28px}
+.stat{padding:0 20px;border-inline-start:1px solid rgba(255,255,255,.12)}
+.stat:first-child{border:0;padding-inline-start:0}
+.stat b{display:block;font-size:30px;font-weight:700;color:#fff;line-height:1.2}
+.stat span{font-size:14px;color:rgba(255,255,255,.65)}
+
+/* sections */
+section{padding:104px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:52px;flex-wrap:wrap}
+.sec-head h2{font-size:clamp(28px,3.4vw,42px);line-height:1.2;font-weight:700;color:var(--g900);margin-top:10px;max-width:640px;text-wrap:balance}
+.sec-head .eyebrow{color:var(--green)}
+.sec-head p{max-width:420px;color:var(--muted)}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:start}
+.about-grid .body p{font-size:18px;margin-bottom:18px}
+.partner{background:#fff;border:1px solid var(--line);border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:20px}
+.partner .logos{display:flex;align-items:center;gap:24px}
+.partner .logos img{height:64px;width:auto}
+.partner .logos i{width:1px;height:56px;background:var(--line)}
+.partner p{color:var(--muted);font-size:15px}
+.clients{margin-top:28px}
+.clients h3{font-size:14px;color:var(--muted);font-weight:500;margin-bottom:14px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 18px;font-weight:600;font-size:15px;color:var(--g900)}
+
+/* products */
+#products{background:#fff}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{border:1px solid var(--line);border-radius:22px;padding:34px 30px;display:flex;flex-direction:column;gap:16px;background:var(--paper);transition:transform .25s,box-shadow .25s,border-color .25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px rgba(9,58,30,.35);border-color:#bfd8c8}
+.ico{width:56px;height:56px;border-radius:16px;background:var(--g900);display:grid;place-items:center}
+.ico svg{width:30px;height:30px;stroke:#fff;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.card h3{font-size:23px;color:var(--g900);font-weight:700}
+.card p{color:var(--muted);font-size:15.5px}
+.card ul{list-style:none;display:flex;flex-direction:column;gap:8px;margin-top:4px}
+.card li{display:flex;gap:10px;align-items:baseline;font-size:15px;font-weight:500}
+.card li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--red);flex:none;transform:translateY(-2px)}
+.card .tag{margin-top:auto;font-size:13.5px;background:#fff;border:1px dashed #c9c3b7;border-radius:12px;padding:10px 14px;color:var(--ink)}
+.card .more{margin-top:auto;font-weight:600;color:var(--green);font-size:15px}
+
+/* brands */
+.brands-box{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden}
+.brands{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));margin-inline-end:-1px;margin-bottom:-1px}
+.brand{display:grid;place-items:center;height:120px;padding:22px 18px;font-weight:700;font-size:17px;letter-spacing:.08em;color:var(--g900);background:#fff;border-inline-end:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center;direction:ltr;transition:background .2s}
+.brand img{max-height:56px;max-width:100%;width:auto;object-fit:contain;transition:transform .25s}
+.brand img+span{display:none}
+.brand:hover{background:#fafaf7}
+.brand:hover img{transform:scale(1.06)}
+
+/* contact */
+#contact{background:var(--g900);color:#fff}
+#contact .sec-head h2{color:#fff}
+#contact .sec-head .eyebrow{color:#8fd3a8}
+#contact .sec-head p{color:rgba(255,255,255,.7)}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cbox{border:1px solid rgba(255,255,255,.16);border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:8px;transition:background .2s}
+a.cbox:hover{background:rgba(255,255,255,.06)}
+.cbox small{color:#8fd3a8;font-size:13px;font-weight:600}
+.cbox b{font-size:17px;font-weight:600;word-break:break-word}
+.ltr{direction:ltr;unicode-bidi:isolate}
+
+footer{background:#06291a;color:rgba(255,255,255,.6);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-top:28px;padding-bottom:28px;flex-wrap:wrap}
+footer .flogos{display:flex;align-items:center;gap:18px}
+footer .flogos img{height:40px;width:auto}
+footer .flogos i{width:1px;height:32px;background:rgba(255,255,255,.2)}
+
+.wa{position:fixed;bottom:22px;inset-inline-end:22px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 26px -8px rgba(0,0,0,.4);transition:transform .2s}
+.wa:hover{transform:scale(1.07)}
+.wa svg{width:30px;height:30px;fill:#fff}
+
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+@media (max-width:960px){
+  .nav ul{display:none}
+  .hero .wrap{grid-template-columns:1fr;padding-top:64px;padding-bottom:64px}
+  .hero-mark{display:none}
+  .stats .wrap{grid-template-columns:repeat(2,1fr);row-gap:22px}
+  .stat:nth-child(3){border:0;padding-inline-start:0}
+  .about-grid,.cards,.contact-grid{grid-template-columns:1fr}
+  .brands{grid-template-columns:repeat(2,1fr)}
+  section{padding:72px 0}
+}
+@media (max-width:520px){
+  .nav .btn{display:none}
+  .nav .logo img{height:44px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="logo" aria-label="Canahill"><img src="cae-logo.png" alt="مؤسسة الكناهل الزراعية"></a>
+    <ul>
+      <li><a href="#about"><span class="ar">من نحن</span><span class="en">About</span></a></li>
+      <li><a href="#products"><span class="ar">منتجاتنا</span><span class="en">Products</span></a></li>
+      <li><a href="#brands"><span class="ar">العلامات التجارية</span><span class="en">Brands</span></a></li>
+      <li><a href="#contact"><span class="ar">تواصل معنا</span><span class="en">Contact</span></a></li>
+    </ul>
+    <div class="nav-end">
+      <button class="lang" id="langBtn" aria-label="Switch language">EN</button>
+      <a class="btn btn-red wa-link" href="#"><span class="ar">اطلب عرض سعر</span><span class="en">Request a Quote</span></a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow"><span class="ar">بالشراكة مع ICS الفرنسية</span><span class="en">In partnership with ICS · France</span></div>
+      <h1>
+        <span class="ar">أكثر من <em>30 عامًا</em> نزرع الثقة في السوق السعودي</span>
+        <span class="en">Over <em>30 years</em> growing trust across Saudi Arabia</span>
+      </h1>
+      <p class="lead">
+        <span class="ar">نورّد البذور عالية الجودة، والبذّارات الحديثة، وقطع الغيار الأصلية لكبرى الشركات والمزارع في المملكة.</span>
+        <span class="en">Premium seeds, precision planters, and genuine spare parts for the Kingdom's leading agricultural companies and farms.</span>
+      </p>
+      <div class="cta">
+        <a class="btn btn-red wa-link" href="#"><span class="ar">اطلب عرض سعر عبر واتساب</span><span class="en">Get a quote on WhatsApp</span></a>
+        <a class="btn btn-ghost" href="#products"><span class="ar">تصفّح منتجاتنا</span><span class="en">Browse products</span></a>
+      </div>
+    </div>
+    <img class="hero-mark" src="cae-logo-reversed.png" alt="" aria-hidden="true">
+  </div>
+  <div class="stats">
+    <div class="wrap">
+      <div class="stat"><b class="ltr">30+</b><span class="ar">عامًا من الخبرة</span><span class="en">Years of experience</span></div>
+      <div class="stat"><b>+10</b><span class="ar">علامات تجارية عالمية</span><span class="en">Global brands</span></div>
+      <div class="stat"><b>3</b><span class="ar">أقسام متخصصة</span><span class="en">Specialized divisions</span></div>
+      <div class="stat"><b>🇫🇷 ICS</b><span class="ar">شريك فرنسي</span><span class="en">French partner</span></div>
+    </div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <div class="eyebrow"><span class="ar">من نحن</span><span class="en">About us</span></div>
+        <h2><span class="ar">شريك المزارع السعودي منذ ثلاثة عقود</span><span class="en">The Saudi grower's partner for three decades</span></h2>
+      </div>
+    </div>
+    <div class="about-grid">
+      <div class="body reveal">
+        <p class="ar">مؤسسة الكناهل الزراعية، وبفضل الله، لها أكثر من 30 عامًا في السوق السعودي، متخصصة في توريد البذور والمعدات الزراعية وقطع الغيار.</p>
+        <p class="ar">نعمل بشراكة فرنسية مع <b>ICS</b>، ونمثّل نخبة من أقوى العلامات الأوروبية في البذّارات والمعدات، لنقدّم لعملائنا جودة موثوقة ودعمًا فنيًا مستمرًا.</p>
+        <p class="en">By the grace of God, Canahill Agricultural Establishment has served the Saudi market for more than 30 years, specializing in seeds, agricultural equipment, and spare parts.</p>
+        <p class="en">Through our French partnership with <b>ICS</b>, we represent leading European planter and equipment brands — delivering trusted quality and ongoing technical support.</p>
+        <div class="clients">
+          <h3><span class="ar">من عملائنا</span><span class="en">Some of our clients</span></h3>
+          <div class="chips">
+            <span class="chip"><span class="ar">المراعي</span><span class="en">Almarai</span></span>
+            <span class="chip"><span class="ar">نادك</span><span class="en">NADEC</span></span>
+            <span class="chip"><span class="ar">الجوف للتنمية الزراعية</span><span class="en">Al Jouf Agricultural Dev.</span></span>
+            <span class="chip"><span class="ar">الإنماء</span><span class="en">Alinma</span></span>
+            <span class="chip"><span class="ar">وغيرها من الشركات الكبرى</span><span class="en">and many more</span></span>
+          </div>
+        </div>
+      </div>
+      <aside class="partner reveal">
+        <div class="logos">
+          <img src="cae-logo.png" alt="CAE">
+          <i></i>
+          <img src="ics-logo.png" alt="ICS">
+        </div>
+        <p><span class="ar">شراكة استراتيجية تجمع خبرة الكناهل المحلية مع الخبرة الفرنسية لـ ICS في البذور والمعدات الزراعية.</span><span class="en">A strategic partnership combining Canahill's local expertise with ICS's French know-how in seeds and agricultural equipment.</span></p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section id="products">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <div class="eyebrow"><span class="ar">منتجاتنا</span><span class="en">What we supply</span></div>
+        <h2><span class="ar">كل ما تحتاجه من البذرة إلى الحصاد</span><span class="en">Everything from seed to harvest</span></h2>
+      </div>
+      <p><span class="ar">ثلاثة أقسام رئيسية، وفريق جاهز للرد على استفساراتك وتجهيز عرض السعر المناسب.</span><span class="en">Three core divisions and a team ready to answer your questions and prepare the right quote.</span></p>
+    </div>
+    <div class="cards">
+      <article class="card reveal">
+        <div class="ico"><svg viewBox="0 0 32 32"><path d="M16 28V14"/><path d="M16 14c0-5 3.5-8.5 9-9 0 5.5-3.5 9-9 9Z"/><path d="M16 19c0-4-3-7-8-7.5 0 4.5 3 7.5 8 7.5Z"/></svg></div>
+        <h3><span class="ar">البذور</span><span class="en">Seeds</span></h3>
+        <p><span class="ar">أصناف هجينة عالية الإنتاجية مختارة لظروف المملكة.</span><span class="en">High-yield hybrid varieties selected for Saudi conditions.</span></p>
+        <ul>
+          <li><span class="ar">بذور البصل — INDUJA F1 · ISIDIA F1 · ICARO F1</span><span class="en">Onion — INDUJA F1 · ISIDIA F1 · ICARO F1</span></li>
+          <li><span class="ar">بذور النجيلة (الثيّل)</span><span class="en">Turfgrass</span></li>
+        </ul>
+        <a class="more wa-link" data-topic="seeds" href="#"><span class="ar">اطلب عرض سعر ←</span><span class="en">Request a quote →</span></a>
+      </article>
+      <article class="card reveal">
+        <div class="ico"><svg viewBox="0 0 32 32"><path d="M4 20h24"/><circle cx="9" cy="24" r="3"/><circle cx="23" cy="24" r="3"/><path d="M7 20V12h11l4 8"/><path d="M12 12V7h4"/><path d="M26 20v-5"/></svg></div>
+        <h3><span class="ar">المعدات الزراعية</span><span class="en">Equipment</span></h3>
+        <p><span class="ar">البذّارات بأنواعها من أفضل العلامات الأوروبية.</span><span class="en">Planters and seed drills of every type from top European brands.</span></p>
+        <ul>
+          <li><span class="ar">بذّارات دقيقة (Precision planters)</span><span class="en">Precision planters</span></li>
+          <li><span class="ar">بذّارات الحبوب (Seed drills)</span><span class="en">Seed drills</span></li>
+          <li><span class="ar">معدات بالطلب حسب احتياج مزرعتك</span><span class="en">Custom-spec equipment on request</span></li>
+        </ul>
+        <a class="more wa-link" data-topic="equipment" href="#"><span class="ar">اطلب عرض سعر ←</span><span class="en">Request a quote →</span></a>
+      </article>
+      <article class="card reveal">
+        <div class="ico"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="4.5"/><path d="M16 4v4M16 24v4M4 16h4M24 16h4M7.5 7.5l2.8 2.8M21.7 21.7l2.8 2.8M7.5 24.5l2.8-2.8M21.7 10.3l2.8-2.8"/></svg></div>
+        <h3><span class="ar">قطع الغيار</span><span class="en">Spare Parts</span></h3>
+        <p><span class="ar">قطع غيار أصلية من أصغر قطعة إلى أكبرها لجميع العلامات التي نمثّلها.</span><span class="en">Genuine parts — from the smallest component to the largest — for every brand we carry.</span></p>
+        <ul>
+          <li><span class="ar">القطع الصغيرة والمتوسطة متوفرة بالمخزون</span><span class="en">Small and mid-size parts in stock</span></li>
+          <li><span class="ar">دعم فني لتحديد القطعة الصحيحة</span><span class="en">Technical help identifying the right part</span></li>
+        </ul>
+        <div class="tag"><span class="ar">⏱ القطع الكبيرة وعالية القيمة تُورَّد بالطلب المسبق</span><span class="en">⏱ Large, high-value parts are supplied on pre-order</span></div>
+        <a class="more wa-link" data-topic="parts" href="#"><span class="ar">اطلب قطعة ←</span><span class="en">Request a part →</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="brands">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <div class="eyebrow"><span class="ar">العلامات التجارية</span><span class="en">Our brands</span></div>
+        <h2><span class="ar">نمثّل أقوى الأسماء في المعدات الزراعية</span><span class="en">We represent the strongest names in farm equipment</span></h2>
+      </div>
+    </div>
+    <div class="brands-box reveal"><div class="brands">
+      <div class="brand"><img src="brand-monosem.png" alt="MONOSEM" loading="lazy" onerror="this.remove()"><span>MONOSEM</span></div>
+      <div class="brand"><img src="brand-vaderstad.png" alt="VÄDERSTAD" loading="lazy" onerror="this.remove()"><span>VÄDERSTAD</span></div>
+      <div class="brand"><img src="brand-kirby.png" alt="KIRBY" loading="lazy" onerror="this.remove()"><span>KIRBY</span></div>
+      <div class="brand"><img src="brand-caruelle.png" alt="CARUELLE" loading="lazy" onerror="this.remove()"><span>CARUELLE</span></div>
+      <div class="brand"><img src="brand-pellenc.svg" alt="PELLENC" loading="lazy" onerror="this.remove()"><span>PELLENC</span></div>
+      <div class="brand"><img src="brand-krone.png" alt="KRONE" loading="lazy" onerror="this.remove()"><span>KRONE</span></div>
+      <div class="brand"><img src="brand-caffini.png" alt="CAFFINI" loading="lazy" onerror="this.remove()"><span>CAFFINI</span></div>
+      <div class="brand"><img src="brand-gregoire-besson.svg" alt="GRÉGOIRE BESSON" loading="lazy" onerror="this.remove()"><span>GRÉGOIRE BESSON</span></div>
+      <div class="brand"><img src="brand-simon.png" alt="SIMON" loading="lazy" onerror="this.remove()"><span>SIMON</span></div>
+      <div class="brand"><img src="brand-alko.png" alt="AL-KO" loading="lazy" onerror="this.remove()"><span>AL-KO</span></div>
+      <div class="brand"><img src="brand-lockwood.png" alt="LOCKWOOD" loading="lazy" onerror="this.remove()"><span>LOCKWOOD</span></div>
+    </div></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <div class="eyebrow"><span class="ar">تواصل معنا</span><span class="en">Contact</span></div>
+        <h2><span class="ar">جاهزون لخدمتك</span><span class="en">We're ready to help</span></h2>
+      </div>
+      <p><span class="ar">أرسل لنا اسم المنتج أو رقم القطعة وسنرد عليك بعرض السعر في أقرب وقت.</span><span class="en">Send us a product name or part number and we'll get back to you with a quote shortly.</span></p>
+    </div>
+    <div class="contact-grid">
+      <a class="cbox reveal wa-link" href="#"><small><span class="ar">واتساب</span><span class="en">WhatsApp</span></small><b class="ltr">+966 54 152 3479</b></a>
+      <a class="cbox reveal" href="tel:+966541523479"><small><span class="ar">اتصال</span><span class="en">Call</span></small><b class="ltr">+966 54 152 3479</b></a>
+      <a class="cbox reveal" href="mailto:abdelrahmancanahill@gmail.com"><small><span class="ar">البريد الإلكتروني</span><span class="en">Email</span></small><b class="ltr">abdelrahmancanahill@gmail.com</b></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="flogos"><img src="cae-logo-white.png" alt="CAE"><i></i><img src="ics-logo-white.png" alt="ICS"></div>
+    <div><span class="ar">© <span class="yr"></span> مؤسسة الكناهل الزراعية — الرياض، المملكة العربية السعودية</span><span class="en">© <span class="yr"></span> Canahill Agricultural Est. — Riyadh, Saudi Arabia</span></div>
+  </div>
+</footer>
+
+<a class="wa wa-link" href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2.1c-.2-.3 0-.5.1-.6l.4-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.8.4 3.5 3.5 0 0 0-1.1 2.6 6 6 0 0 0 1.3 3.2 13.8 13.8 0 0 0 5.3 4.7c2 .8 2.4.7 2.8.6a2.6 2.6 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .1-1.3c0-.1-.3-.2-.6-.4ZM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8ZM20.5 3.5A11.8 11.8 0 0 0 1.9 17.7L.2 24l6.4-1.7A11.8 11.8 0 0 0 24 12a11.7 11.7 0 0 0-3.5-8.5Z"/></svg></a>
+
+<script>
+(function(){
+  var html=document.documentElement, btn=document.getElementById('langBtn');
+  var PHONE='966541523479';
+  var msgs={
+    ar:{def:'السلام عليكم، أرغب في الاستفسار عن منتجات مؤسسة الكناهل الزراعية.',seeds:'السلام عليكم، أرغب في عرض سعر للبذور.',equipment:'السلام عليكم، أرغب في عرض سعر لمعدات زراعية.',parts:'السلام عليكم، أبحث عن قطعة غيار. رقم/اسم القطعة: '},
+    en:{def:'Hello, I would like to inquire about Canahill products.',seeds:'Hello, I would like a quote for seeds.',equipment:'Hello, I would like a quote for agricultural equipment.',parts:'Hello, I am looking for a spare part. Part number/name: '}
+  };
+  function setLinks(l){
+    document.querySelectorAll('.wa-link').forEach(function(a){
+      var t=msgs[l][a.dataset.topic||'def'];
+      a.href='https://wa.me/'+PHONE+'?text='+encodeURIComponent(t);
+      a.target='_blank'; a.rel='noopener';
+    });
+  }
+  function apply(l){
+    html.lang=l; html.dir=l==='ar'?'rtl':'ltr';
+    btn.textContent=l==='ar'?'EN':'عربي';
+    document.title=l==='ar'?'مؤسسة الكناهل الزراعية | Canahill Agricultural Est.':'Canahill Agricultural Est. | مؤسسة الكناهل الزراعية';
+    setLinks(l);
+    try{localStorage.setItem('cae-lang',l)}catch(e){}
+  }
+  var saved='ar'; try{saved=localStorage.getItem('cae-lang')||'ar'}catch(e){}
+  apply(saved);
+  btn.addEventListener('click',function(){apply(html.lang==='ar'?'en':'ar')});
+  document.querySelectorAll('.yr').forEach(function(e){e.textContent=new Date().getFullYear()});
+  var io='IntersectionObserver' in window ? new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})
+  },{threshold:.12}) : null;
+  document.querySelectorAll('.reveal').forEach(function(el){io?io.observe(el):el.classList.add('in')});
+})();
+</script>
+</body>
+</html>
